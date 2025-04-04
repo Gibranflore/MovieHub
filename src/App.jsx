@@ -1,28 +1,14 @@
-import logo from './logo.svg';
-import './App.css';
+import { MovieGrid } from "./MovieGrid"
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-        <h1 className="text-3xl font-bold underline">
-          hola como estamos
-        </h1>
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+export const App = () => {
+    return <>
+        <body class="bg-gradient-to-r from-slate-900 to-slate-700">
+        <header class="bg-slate-950">
+            <h1 class="text-red-600 text-3xl"> MovieHub </h1>
+        </header>
+        <main>
+            <MovieGrid />
+        </main>
+        </body>
+    </>
 }
-
-export default App;
